@@ -2,8 +2,9 @@
 
 :root {
   --primary-color: #60a5fa;
+  /* --primary-color: #059669; */
   --off-white: #F5F3FF;
-  --dark-gray: #F5F3FF;
+  --dark-gray: #6B7280;
 }
 /* typography */
 body {
@@ -50,7 +51,7 @@ hr {
     list-style-type: none;
 }
 
-.list-unordered.list-inline li {
+.list-inline li {
     display: inline;
 }
 
@@ -89,6 +90,10 @@ hr {
     max-width: 350px;
     margin: auto;
     display: block;
+}
+
+.hero .header-info {
+    color: var(--dark-gray);
 }
 /* TODO */
 
