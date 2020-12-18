@@ -3,12 +3,14 @@
 :root {
   --primary-color: #60a5fa;
   /* --primary-color: #059669; */
+  --text-color-default: white;
   --off-white: #F5F3FF;
   --dark-gray: #6B7280;
 }
 /* typography */
 body {
   font-family: "Nunito", sans-serif;
+  margin: 0px;
 }
 
 hr {
@@ -18,31 +20,30 @@ hr {
 /* containters */
 
 .container-fluid {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0rem 1rem;
 }
 
 .container {
     margin: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem 1rem;
     max-width: 600px;
 }
 
 /* Links */
 .link {
     text-decoration: none;
-    border: 1px solid var(--primary-color);
+    
     border-radius: 0.5rem;
     padding: 0.5rem 0.5rem;
 }
 
 .link-primary {
+    border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-color-default);
 }
 .link-secondary {
-    padding: 0.45rem 0.5rem;
+    border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
 
@@ -59,7 +60,7 @@ hr {
 .navigation {
     background-color: var(--primary-color);
     padding: 1rem;
-    color: white;
+    color: var(--text-color-default);
     border-bottom-left-radius: 1rem;
 }
 
@@ -73,7 +74,7 @@ hr {
 }
  
 .navigation .link {
-    color: white;
+    color: var(--text-color-default);
 }
 
 .navigation .link-active {
@@ -82,6 +83,7 @@ hr {
 
 /* header */
 .hero {
+    padding-top: 3rem;
     color: var(--off-white);
     display: block;
 }
@@ -96,16 +98,23 @@ hr {
     color: var(--dark-gray);
     text-align: center;
 }
+
+.highlight {
+    color: var(--primary-color);
+}
+.center-text {
+    text-align: center;
+}
 /* TODO */
 
 /* section */
 
 .section {
     display: block;
-    padding: 1rem 1rem;
+    padding: 1.5rem 1rem;
 }
 
-.section h2 {
+.section h2,h3 {
     text-align: center;
 }
 
@@ -117,20 +126,27 @@ hr {
 .footer {
     background-color: var(--primary-color);
     padding: 1rem;
-    color: white;
+    color: var(--text-color-default);
     border-top-right-radius: 1rem;
+    text-align: center;
 }
 
 .footer .heading {
-    text-align: center;
     font-weight: bold;
+    font-size: large;
 }
 
 .footer ul {
-    text-align: center;
     padding-inline-start: 0px;
 }
 
 .footer .link {
-    color: white;
+    color: var(--text-color-default);
+}
+
+.container .blog-head {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
