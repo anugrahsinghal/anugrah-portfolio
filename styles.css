@@ -94,6 +94,7 @@ hr {
 
 .hero .header-info {
     color: var(--dark-gray);
+    text-align: center;
 }
 /* TODO */
 
@@ -127,6 +128,7 @@ hr {
 
 .footer ul {
     text-align: center;
+    padding-inline-start: 0px;
 }
 
 .footer .link {
